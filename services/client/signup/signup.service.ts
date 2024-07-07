@@ -36,7 +36,7 @@ export const singupValidationSchema = Yup.object({
 export const signupApi = (payload: ISignupValuesDB) => async () => {
   try {
     const response = await fetch(
-      `${process.env.NEXT_PUBLIC_BASE_URL}user/register`,
+      `${process.env.NEXT_PUBLIC_BASE_URL}/user/register`,
       {
         method: "POST",
         headers: {
